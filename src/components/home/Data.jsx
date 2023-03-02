@@ -1,9 +1,10 @@
 import React from 'react'
+import { Typewriter } from 'react-simple-typewriter';
 
 const Data = () => {
   return (
     <div className="home__data">
-
+    <h3 className="home__subtitle">Hello, It's Me</h3>
      <h1 className="home__title"> Bishwagit Das
       <svg
                     width="36"
@@ -55,7 +56,19 @@ const Data = () => {
                     ></path>
      </svg>
      </h1>
-     <h3 className="home__subtitle">Software Developer</h3>
+     <h3 className="home__subtitle">And I'm A 
+     <span>
+     <Typewriter
+     words={[ ' Programmer', ' Software Developer', ' Designer']}
+    loop={Infinity}
+     cursor
+     cursorStyle='_'
+     typeSpeed={70}
+     deleteSpeed={50}
+     delaySpeed={1000}
+     />
+     </span>
+     </h3>
      <p className="home__description">
      I'm Software Developer based in Bangladesh,and I'm very passionate
      and dedicated to my work.</p>
